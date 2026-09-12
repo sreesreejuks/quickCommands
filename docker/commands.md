@@ -1,5 +1,7 @@
 # Docker Quick Commands
 
+Use this section for container lifecycle and cleanup tasks.
+
 ## Containers
 
 Run an ephemeral, interactive Ubuntu container (auto-removed on exit):

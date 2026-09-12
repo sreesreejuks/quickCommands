@@ -1,5 +1,7 @@
 # GitHub CLI (gh) Quick Commands
 
+Use this section for repository, pull request, issue, and workflow tasks.
+
 ## Auth
 
 Check current login status and token scopes:

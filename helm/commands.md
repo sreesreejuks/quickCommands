@@ -1,5 +1,7 @@
 # Helm Quick Commands
 
+Use this section for chart repositories, release operations, and debugging tasks.
+
 ## Repos
 
 Add a chart repo:

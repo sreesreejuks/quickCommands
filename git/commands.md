@@ -1,5 +1,7 @@
 # Git Quick Commands
 
+Use this section for repository setup, daily workflow, and repo-audit tasks.
+
 ## Setup
 
 Initialize a new git repo in the current folder:
