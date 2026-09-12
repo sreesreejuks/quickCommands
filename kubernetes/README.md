@@ -1,10 +1,12 @@
-# Kubernetes Quick Commands
+# Kubernetes
 
-Split by category into separate files:
+Quick command reference for cluster access, workloads, networking, and storage tasks.
 
-- [cluster-access.md](cluster-access.md) — Cluster Access, Namespaces
-- [workloads.md](workloads.md) — Pods, Deployments, Exec/Debug
-- [observability.md](observability.md) — Events, Logs, Resource Usage
-- [networking.md](networking.md) — Services & Ingress
-- [argocd.md](argocd.md) — ArgoCD Repo-Server Debugging, ArgoCD CLI
-- [storage.md](storage.md) — Secrets, Persistent Volumes & Claims
+Use this folder when you need to inspect the cluster, debug workloads, check logs, or manage Kubernetes resources and configuration.
+
+- [cluster-access.md](cluster-access.md) — cluster access, namespaces, and context checks
+- [workloads.md](workloads.md) — pods, deployments, and exec/debug commands
+- [observability.md](observability.md) — events, logs, and resource usage
+- [networking.md](networking.md) — services and ingress
+- [argocd.md](argocd.md) — ArgoCD repo-server debugging and CLI usage
+- [storage.md](storage.md) — secrets, persistent volumes, and persistent volume claims
