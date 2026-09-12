@@ -1,5 +1,8 @@
 # Linux Quick Commands
 
+Shell chaining and job-control notes (`;`, `&&`, `||`, `&`, `|`) live in
+[notes.md](notes.md).
+
 ## Search Files & Text
 
 Search a directory tree recursively for one of several patterns in file
