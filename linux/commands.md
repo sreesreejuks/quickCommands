@@ -1,5 +1,8 @@
 # Linux Quick Commands
 
+Shell chaining and job-control notes (`;`, `&&`, `||`, `&`, `|`) live in
+[notes.md](notes.md).
+
 ## Search Files & Text
 
 Search a directory tree recursively for one of several patterns in file
@@ -177,4 +180,9 @@ wc -l <file>
 Count occurrences of each unique line (e.g. top values in a column):
 ```bash
 sort <file> | uniq -c | sort -rn
+```
+
+Decode a Base64 string to plaintext (`-d` is GNU/Linux; on macOS use `base64 -D` or `base64 --decode`):
+```bash
+echo "<base64-string>" | base64 -d
 ```
