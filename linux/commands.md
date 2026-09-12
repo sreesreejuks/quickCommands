@@ -1,5 +1,7 @@
 # Linux Quick Commands
 
+Use this section for shell, file, and system-level tasks.
+
 Shell chaining and job-control notes (`;`, `&&`, `||`, `&`, `|`) live in
 [notes.md](notes.md).
 
