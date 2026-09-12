@@ -178,3 +178,8 @@ Count occurrences of each unique line (e.g. top values in a column):
 ```bash
 sort <file> | uniq -c | sort -rn
 ```
+
+Decode a Base64 string to plaintext (`-d` is GNU/Linux; on macOS use `base64 -D` or `base64 --decode`):
+```bash
+echo "<base64-string>" | base64 -d
+```
