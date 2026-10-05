@@ -53,6 +53,26 @@ kubectl cp <namespace>/<pod-name>:<path-in-pod> <local-path>
 A Deployment manages a set of pods for you (how many replicas, which image
 version, etc.). These commands act on the Deployment, not an individual pod.
 
+Create a Deployment from a manifest file:
+```bash
+kubectl create -f <deployment-manifest.yaml> -n <namespace>
+```
+
+List Deployments in a namespace:
+```bash
+kubectl get deployments -n <namespace>
+```
+
+Create or update resources from a manifest file:
+```bash
+kubectl apply -f <deployment-manifest.yaml> -n <namespace>
+```
+
+Update a Deployment's container image:
+```bash
+kubectl set image deployment/<deployment-name> <container-name>=<image-name>:<tag> -n <namespace>
+```
+
 Restart all pods in a Deployment one by one (rolling restart, no downtime) —
 useful when a pod is misbehaving or you need it to pick up a new
 ConfigMap/Secret without changing the image:
@@ -64,6 +84,11 @@ Watch the status of an ongoing rollout (e.g. after a restart or a new
 deploy) until it finishes:
 ```bash
 kubectl rollout status deployment <deployment-name> -n <namespace>
+```
+
+View the revision history for a Deployment:
+```bash
+kubectl rollout history deployment/<deployment-name> -n <namespace>
 ```
 
 Roll back a Deployment to its previous version (e.g. a bad release):
